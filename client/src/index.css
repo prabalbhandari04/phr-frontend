@@ -1,0 +1,66 @@
+.note {
+  background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+}
+
+/* Down-arrow */
+.down-arrow {
+  width: 1.5rem;
+  height: 2rem;
+  color: #fff;
+  animation: jumpInfinite 1.5s infinite;
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+/* gradients */
+.white-gradient {
+  background: #eeeeee;
+  background: linear-gradient(180deg, rgba(255,255,255,0.2866479355414041) 0%, rgba(255,255,255,0.6816059187346813) 9%, rgba(255,255,255,0.9477123613117122) 32%);
+}
+
+/* Custom scroll */
+::-webkit-scrollbar {
+  width: 0.2em;
+  height: 0.2em;
+}
+
+::-webkit-scrollbar-track {
+  background: #eeeeee;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #50CB93;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7dfbc2;
+}
+
+@supports (scrollbar-color: red blue) {
+  *{
+      scrollbar-color: #50CB93 #eeeeee;
+      scrollbar-width: thin; 
+  }
+  .hide-scrollbar {
+    scrollbar-color: transparent transparent;
+    scrollbar-width: none;
+  }
+}
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
